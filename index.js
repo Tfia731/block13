@@ -6,32 +6,31 @@
 // 0	         "The number 0 is falsy (the only falsy number)"
 // ""	        "The empty string is falsy (the only falsy string)" //
 
-const IamAString = true;
+const input1= "I am a string";
+const input2= false;
+const input3= null;
+const input4= undefined;
+const input5= 0;
+const input6= "";
 
-let value=0;
+// set value to an input to test
 
-if(value) {
-    console.log ("true")
-}
-else if (value === false){
-        console.log("The boolean value false is falsy")
-}
+let value=input;
 
-else if (value === null){
-    console.log("The null value is falsy")
-}
-
-else if (value === undefined){
+if (input) {
+    console.log(true)
+} else if (input === "") {
+    console.log("The empty string is falsy (the only falsy string)")
+} else if (input === 0) {
+    console.log("The number 0 is falsy (the only falsy number)")
+} else if (input === undefined) {
     console.log("undefined is falsy")
-}
+} else if (input === null) {
+    console.log("The null value is falsy")
+} else if (input === false) {
+    console.log("The boolean value false is falsy")
+};
 
-else if (value === 0){
-    console.log("The number 0 is falsy")
-}
-
-else if (value === ""){
-    console.log("The empty string is falsy ")
-}
 
 // sum + " is less than -1000";
 // sum + " is a negative number";
@@ -47,42 +46,26 @@ else if (value === ""){
 // -1000	            0	            
 // -5	                0	            
 
-let const a = 50;
-let const b = 51;
-console.log (a + b || a + b > 100)
+const num1 = 50;
+const num2 = 51;
+const sum = num1 + num2;
 
-//"101 is greater than 100"
+if (sum < -1000) {
+    console.log(sum + " is less than -1000")
+} else if (sum < 0) {
+    console.log(sum + " is a negative number")
+} else if (sum === 0) {
+    console.log(sum + " is equal to 0")
+} else if (sum > 0 && sum < 100) {
+    console.log(sum + " is greater than 0")
+} else if (sum > 100) {
+    console.log(sum + " is greater than 100")
+};
 
-let const a = 99;
-let const b = -2;
-console.log ( a + b || 97 > 0)
 
-// "97 is greater than 0"
 
-let const a = 0;
-let const b = 101;
-console.log (a + b || a + b > 100)
-
-// "101 is greater than 100"
-
-let const a = 500;
-let const b = -500;
-console.log (a + b === 0 )
-
-// "0 is equal to 0"
-
-let const a = -1000;
-let const b = 0;
-console.log (a + b = negative )
-
-// "-1000 is a negative number"
-
-let const a = -5;
-let const b = 0;
-console.log (a + b = negative )
-
-//"-5 is a negative number" 
-
+// Greater than or equal to 5
+// for EACH INPUT RETURN TRUE IF BOTH PARAMETERS ARE GREATER THAN OR EQUAL TO 5
 // num1	  num2	Expected Print
 //  5	       6	  true
 // 10	      11      true
@@ -92,48 +75,51 @@ console.log (a + b = negative )
 //  5	        5	    true
 
 
-if(input num1 === num2) {
-    console.log(5<6)
+let num1=5
+let num2=6
+
+if( num1 >= 5 && num2 >= 6) {
+    console.log(true)
    } else {
-    console.log("true")
+    console.log(false)
    };
 
 //prints true
-
-if(input num1 === num2) {
-console.log(10<= 11)
+if (num1 >= 10 && num1 >= 11) {
+    console.log(true)
 } else {
-    console.log("true")
-   };
+    console.log(false)
+};
+
 // prints true
-
-if else(input num1 === num2) {
-console.log(0>0)
+if (num1 >= 0 && numB >= 0) {
+    console.log(true)
 } else {
-    console.log("false")
-   };
+    console.log(false)
+}
+
 //prints false
-
-if else(input num1 === num2) {
-console.log(1000<= -1000)
+if (num1 >= 1000 && num2 >= -1000) {
+    console.log(true)
 } else {
-    console.log("false")
-   };
+    console.log(false)
+}
+
 // prints false
+if (num1 >= 6 && num2 >= 4) {
+    console.log(true)
+} else {
+    console.log(false)
+}
 
-if else(input num1 === num2) {
-    console.log(6 <= 4)
-    } else {
-        console.log("false")
-       };
-    // prints false
-
-    if else(input num1 === num2) {
-        console.log( 5 <= 5)
-        } else {
-            console.log("true")
-           };
-        // prints true
+// prints false
+if (num1>= 5 && num2 >= 5) {
+    console.log(true)
+} else {
+    console.log(false)
+}
+    
+// prints true
 
 
       //  param1A	param1B	    param2A	    param2B	    Expected Print
@@ -144,50 +130,65 @@ if else(input num1 === num2) {
 //              11	     "eleven"	"four"	"for"	    false   
 //          "cake"	    "cake"	     "pie"	"pie"	    true
 
+let param1a ="cat";
+let param1b ="cat";
+let param2a = 6
+let param2b = "6";
 
-if (input cat === cat) {
-    console.log( 6 <= 6)
+if (param1a === param1b || param2a === param2b) {
+    console.log(true)
     } else {
-        console.log("true")
+        console.log(false)
        };
+
     // prints true
 
-
-    if input 5 === "five") {
-        console.log( "dog === "dawg")
+    if (param1a === param1b || param2a === param2b) {
+        console.log(true)
         } else {
-            console.log("false")
+            console.log(false)
            };
+    
+  
         // prints false
 
-
-    if else(input "0" === "false") {
-        console.log( "horse" <= "horse")
-        } else {
-            console.log("false")
-           };
+        if (param1a === param1b || param2a === param2b) {
+            console.log(true)
+            } else {
+                console.log(false)
+               };
+        
+    
         // prints false
 
-
-    if else(input "8" === "8") {
-        console.log( ate <= ate)
-        } else {
-            console.log("true")
-           };
+        if (param1a === param1b || param2a === param2b) {
+            console.log(true)
+            } else {
+                console.log(false)
+               };
+        
+  
         // prints true
 
-  
-        if (input "11" === "eleven") {
-            console.log( four <= for)
+        if (param1a === param1b || param2a === param2b) {
+            console.log(true)
             } else {
-                console.log("false")
+                console.log(false)
                };
+        
+   
             // prints false      
 
-
-            if (input cake === cake) {
-                console.log( pie <= pie)
+            if (param1a === param1b || param2a === param2b) {
+                console.log(true)
                 } else {
-                    console.log("true")
+                    console.log(false)
                    };
-                // prints true
+            
+          
+  // prints true
+  if (param1a === param1b || param2a === param2b) {
+    console.log(true)
+    } else {
+        console.log(false)
+       };
